@@ -15,7 +15,8 @@ weatherFrom.addEventListener('submit', (e) => {
                     messageOne.textContent =data.error
                 } else {
                     messageOne.textContent = data.location
-                    messageTwo.textContent = data.forecast.summary + ', temperatura ' + data.forecast.temperature + '^C'
+                    // messageTwo.textContent = data.forecast.summary + ', temperatura ' + data.forecast.temperature + '^C'
+                    messageTwo.textContent = data.forecast
                     console.log(data.forecast)
                 }
             })
